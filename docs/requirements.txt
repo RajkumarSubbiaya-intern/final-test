@@ -1,0 +1,15 @@
+sphinx-rtd-theme==1.3.0
+sphinxcontrib-httpdomain
+sphinxcontrib-httpexample
+sphinxcontrib-mermaid==0.7.1
+linuxdoc==20210324
+sphinx_design
+sphinxcontrib-openapi
+sphinxcontrib-redoc
+sphinx==6.2.1
+sphinxcontrib-plantuml==0.24
+sphinx_simplepdf
+sphinx_disqus
+sphinx-needs
+sphinx-panels
+sphinx-tabs

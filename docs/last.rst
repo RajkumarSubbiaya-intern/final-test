@@ -1,0 +1,12 @@
+Development & Release Process: Ensuring a Smooth Deployment
+===========================================================
+
+The development, QA, and release processes follow a structured workflow to ensure that all features and bug fixes are properly integrated, tested, and deployed with minimal risk. 
+
+From the **developer's perspective,** once a new feature is planned, they create a **Feature Request (FR) branch** and ensure that all related pull requests (PRs) are merged back into their respective feature branches. Before the final integration into the main development branch (devel), developers carefully review the branches to confirm that all relevant production releases contain the necessary changes. For bug fixes, developers ensure that once QA has validated the fixes, they are merged into the appropriate branches. If the fixes are required in a production release, developers handle cherry-picking to the **production Release Candidate (RC) branch,** ensuring consistency across multiple release versions. 
+
+At this stage, the **RTE and Product Manager (PdM) take over the process,** verifying that all **feature branches are ready** and that **bug fixes have been QA-approved.** The RTE ensures that all **PRs for the upcoming production RC release are cherry-picked into devel,** and once confirmed, the development branch is branched off into the next production release. This transition marks the beginning of the release preparation phase. 
+
+Once the **next production RC release branch is created,** the **release process** begins with the generation of **Quay images,** followed by a **QA-led regression testing cycle.** Post-merge, **sanity checks, regression tests, and nightly test runs** validate the stability of the RC release. Nightly tests are crucial as they help uncover inconsistencies, performance issues, or integration failures that might not surface in smaller tests. If any new bugs are discovered during this phase, new bug tickets are created, initiating another cycle of **development, QA validation, and RC release updates.** This iterative process continues until regression is completed without any unresolved issues. 
+
+Once the **QA team confirms the RC release is stable,** the **RTE promotes the RC to a production release.** At this point, **ROPS, with assistance from the FE team, takes over the production deployment** to ensure a seamless transition into the live environment. 

@@ -1,0 +1,20 @@
+.red {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* Highlight the entire sidebar */
+.wy-nav-side {
+    background-color: #222c32 !important;  /* Choose your preferred color */
+}
+  
+/* Ensure the logo/search area matches the sidebar */
+.wy-side-nav-search {
+background-color: white !important;
+}
+  
+/* Optional: Make logo text visible on dark background */
+.wy-side-nav-search > a {
+color: #fff !important;
+}
